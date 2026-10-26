@@ -1,9 +1,10 @@
+import os
 
 import sqlite3
 from pathlib import Path
 
 PROJECT_DIR = Path(__file__).resolve().parent
-DB_PATH = PROJECT_DIR / "movie_data.db"
+DB_PATH = Path(os.environ.get("MOVIE_DB_PATH", str(PROJECT_DIR / "movie_data.db")))
 
 
 def main():

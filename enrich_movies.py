@@ -19,7 +19,7 @@ from dotenv import load_dotenv
 # ============================================================
 
 PROJECT_DIR = Path(__file__).resolve().parent
-DB_PATH = PROJECT_DIR / "movie_data.db"
+DB_PATH = Path(os.environ.get("MOVIE_DB_PATH", str(PROJECT_DIR / "movie_data.db")))
 LOG_DIR = PROJECT_DIR / "logs"
 LOG_FILE = LOG_DIR / "enrichment.log"
 LOCK_FILE = PROJECT_DIR / "enrichment.lock"

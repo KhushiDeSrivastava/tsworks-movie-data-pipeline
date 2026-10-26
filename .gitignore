@@ -23,6 +23,9 @@ __pycache__/
 *.db-shm
 *.bak
 *.backup
+movie_data.db
+movie_data_live.db
+movie_data_before_restore.db
 
 # Runtime Logs & Concurrency Lock Files
 logs/
@@ -33,6 +36,8 @@ logs/
 *.tmp
 *.swp
 *.before_test
+*.bak_*
+*.bak_before_db_path
 .DS_Store
 Thumbs.db
 .vscode/

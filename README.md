@@ -194,6 +194,180 @@ Output is mirrored to terminal and persisted in `query_output.txt`.
 
 ---
 
+## Interview Demo: Completed SQL Queries and Live API Enrichment
+
+This project is prepared with two distinct demonstration modes designed for technical interviews:
+1. **Scenario A (Completed SQL Demo)**: Executes analytical queries against the fully enriched production database (`movie_data.db`).
+2. **Scenario B (Live API Enrichment Demo)**: Demonstrates live external OMDb API calls, batching, validation, error handling, and transaction commits in real time against an isolated demo database (`movie_data_live.db`).
+
+> [!NOTE]
+> **Local Database State vs. GitHub Repository**:
+> SQLite database files (`movie_data.db`, `movie_data_live.db`, `movie_data_before_restore.db`, and `*.db*`) and sensitive configuration (`.env`) are generated and maintained locally. They are excluded from version control via `.gitignore` to keep the repository lightweight, secure, and reproducible from raw data.
+>
+> In the local environment:
+> - `movie_data.db`: Completed master database containing **9,742 movies** and **9,742 successful enrichments** (100% complete, 0 pending, 0 errors).
+> - `movie_data_live.db`: Dedicated live-demo database containing **9,742 movies**, **6 successful enrichments**, and **9,736 pending movies**, ready for live enrichment demonstration.
+
+> [!IMPORTANT]
+> **Scope of `MOVIE_DB_PATH`**:
+> The `MOVIE_DB_PATH` environment variable controls the database target for `enrich_movies.py` and `verify_database.py`.
+> The core ETL script (`etl.py`) and the analytical query runner (`run_required_queries.py`) default to `movie_data.db` directly. This ensures that the master analytics database and assignment queries remain isolated, consistent, and protected from live demo runs.
+
+---
+
+### Scenario A: Completed SQL Demo (Default Master Database)
+
+This scenario demonstrates the final verified results of all 4 assignment SQL queries using the master database (`movie_data.db`).
+
+#### 1. Ensure Default Database Selection
+By default, when `MOVIE_DB_PATH` is not set, scripts connect directly to `movie_data.db`. If you previously ran Scenario B or set the variable in your current terminal session, clear it to return to the default master database:
+
+```powershell
+# PowerShell
+Remove-Item Env:\MOVIE_DB_PATH -ErrorAction SilentlyContinue
+```
+*(On Bash / macOS / Linux: `unset MOVIE_DB_PATH` | On Windows CMD: `set MOVIE_DB_PATH=`)*
+
+#### 2. Verify Master Database Health & Completion
+Verify that the master database has 9,742 movies and 9,742 successful enrichments:
+
+```powershell
+python .\verify_database.py
+```
+
+Expected output:
+```text
+DATABASE VERIFICATION
+========================================
+movies: 9,742 rows
+ratings: 100,836 rows
+genres: 19 rows
+movie_genres: 22,050 rows
+movie_details: 9,742 rows
+directors: 4,526 rows
+movie_directors: 10,715 rows
+
+ENRICHMENT STATUS
+----------------------------------------
+success: 9,742
+
+Foreign-key validation passed.
+```
+
+#### 3. Run the 4 Required Assignment Queries
+Execute `run_required_queries.py` to run all four required analytical queries from `queries.sql`:
+
+```powershell
+python .\run_required_queries.py
+```
+
+Results demonstrated:
+- **Query 1 (Highest Average Rating)**: Identifies 296 tied titles with a 5.0 average rating.
+- **Query 2 (Top 5 Genres by Rating)**: Film-Noir (3.92), War (3.81), Documentary (3.80), Drama (3.66), Crime (3.66).
+- **Query 3 (Director with Most Movies)**: Woody Allen (48 movies).
+- **Query 4 (Average Rating by Year)**: Annual average ratings spanning 106 release years (1902–2018).
+
+---
+
+### Scenario B: Live API Enrichment Demo (Isolated Live Database)
+
+This scenario demonstrates live OMDb API querying, rate handling, single-instance file locking, normalization, and relational insertion in real time without altering the master database.
+
+#### Prerequisites for Live Enrichment
+- **Valid OMDb API Key**: Must be configured in `.env` (`OMDB_API_KEY=your_key_here`).
+- **Network Connectivity**: Outbound HTTPS access to `https://www.omdbapi.com/`.
+- **Available API Quota**: Daily limit of 1,000 requests on the free tier (resets at 00:00 UTC).
+
+#### 1. Select the Live Database
+Set the `MOVIE_DB_PATH` environment variable in PowerShell to point to `movie_data_live.db`:
+
+```powershell
+# PowerShell
+$env:MOVIE_DB_PATH = "movie_data_live.db"
+```
+*(On Bash / macOS / Linux: `export MOVIE_DB_PATH="movie_data_live.db"` | On Windows CMD: `set MOVIE_DB_PATH=movie_data_live.db`)*
+
+#### 2. Verify Selected Database State Before Running
+Run `verify_database.py` to confirm that the script is targeting `movie_data_live.db` and shows pending records:
+
+```powershell
+python .\verify_database.py
+```
+
+Expected output:
+```text
+DATABASE VERIFICATION
+========================================
+movies: 9,742 rows
+ratings: 100,836 rows
+genres: 19 rows
+movie_genres: 22,050 rows
+movie_details: 9,742 rows
+directors: 6 rows
+movie_directors: 6 rows
+
+ENRICHMENT STATUS
+----------------------------------------
+pending: 9,736
+success: 6
+
+Foreign-key validation passed.
+```
+
+#### 3. Configure a Controlled Run Limit (`MAX_MOVIES_PER_RUN`)
+For interview demonstrations, configure a small limit (e.g., 2 to 5 movies) so the live execution completes quickly and conserves your daily API quota.
+
+> [!WARNING]
+> **`.env` Configuration Precedence**:
+> `enrich_movies.py` invokes `load_dotenv(PROJECT_DIR / ".env", override=True)`. Because `override=True` is enabled, **values defined in `.env` override environment variables set in the terminal**.
+> - If `MAX_MOVIES_PER_RUN` is defined in your `.env` file (e.g., `MAX_MOVIES_PER_RUN=3`), that value takes precedence.
+> - To adjust the limit, update the value directly in `.env`, or define it in your environment if omitted from `.env`.
+> - **Always inspect the startup log message** before the API calls proceed:
+>   ```text
+>   Run configured with limit: maximum X movie(s) will be processed.
+>   ```
+>   Confirm that `X` matches your intended demonstration limit.
+
+#### 4. Execute Live API Enrichment
+Run `enrich_movies.py`:
+
+```powershell
+python .\enrich_movies.py
+```
+
+Observe in the console log:
+1. `SingleInstanceGuard` acquiring `enrichment.lock`.
+2. Limit confirmation (e.g., `maximum 3 movie(s) will be processed`).
+3. Fetching pending movies from `movie_data_live.db`.
+4. OMDb API query via canonical IMDb ID (`i=tt...`) with clean title fallback.
+5. Successful payload validation, director normalization, and database transaction commit.
+6. Summary log showing processed counts and clean completion.
+
+#### 5. Verify the Updated State
+Run `verify_database.py` again to observe the live progress:
+
+```powershell
+python .\verify_database.py
+```
+Notice that `success` incremented by the configured batch count and `pending` decreased accordingly.
+
+#### 6. Switch Back to the Master Database
+When the live demonstration is complete, clear `MOVIE_DB_PATH` to return to the default master database:
+
+```powershell
+# PowerShell
+Remove-Item Env:\MOVIE_DB_PATH
+```
+*(On Bash / macOS / Linux: `unset MOVIE_DB_PATH` | On Windows CMD: `set MOVIE_DB_PATH=`)*
+
+Verify that the system has returned to the master database:
+```powershell
+python .\verify_database.py
+```
+Output confirms that `movie_data.db` is selected, showing all 9,742 movies in `success` status.
+
+---
+
 ## 7. Testing & Verification
 
 All automated tests run completely offline and mock all external API requests, ensuring no quota is consumed during testing:
