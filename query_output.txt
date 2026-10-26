@@ -1,0 +1,438 @@
+
+============================================================
+REQUIRED ASSIGNMENT QUERY 1
+============================================================
+title | average_rating | rating_count
+'Salem's Lot (2004) | 5.0 | 1
+12 Angry Men (1997) | 5.0 | 1
+12 Chairs (1976) | 5.0 | 1
+20 Million Miles to Earth (1957) | 5.0 | 1
+61* (2001) | 5.0 | 1
+7 Faces of Dr. Lao (1964) | 5.0 | 1
+9/11 (2002) | 5.0 | 1
+A Detective Story (2003) | 5.0 | 1
+A Flintstones Christmas Carol (1994) | 5.0 | 1
+A Perfect Day (2015) | 5.0 | 1
+A Plasticine Crow (1981) | 5.0 | 1
+Act of Killing, The (2012) | 5.0 | 1
+Adventures Of Sherlock Holmes And Dr. Watson: The Twentieth Century Approaches (1986) | 5.0 | 1
+Advise and Consent (1962) | 5.0 | 1
+Alesha Popovich and Tugarin the Dragon (2004) | 5.0 | 1
+Alien Contamination (1980) | 5.0 | 1
+All Yours (2016) | 5.0 | 1
+All the Vermeers in New York (1990) | 5.0 | 1
+American Friend, The (Amerikanische Freund, Der) (1977) | 5.0 | 1
+Animals are Beautiful People (1974) | 5.0 | 1
+Assignment, The (1997) | 5.0 | 1
+Asterix and the Vikings (Astérix et les Vikings) (2006) | 5.0 | 1
+Awfully Big Adventure, An (1995) | 5.0 | 1
+Babes in Toyland (1934) | 5.0 | 1
+Ballad of Narayama, The (Narayama bushiko) (1983) | 5.0 | 1
+Battle For Sevastopol (2015) | 5.0 | 1
+Battle Royale 2: Requiem (Batoru rowaiaru II: Chinkonka) (2003) | 5.0 | 1
+Belle époque (1992) | 5.0 | 2
+Big Top Scooby-Doo! (2012) | 5.0 | 1
+Bill Hicks: Revelations (1993) | 5.0 | 1
+Bitter Lake (2015) | 5.0 | 1
+Black Mirror | 5.0 | 1
+Black Tar Heroin: The Dark End of the Street (2000) | 5.0 | 1
+Bloodsucking Bastards (2015) | 5.0 | 1
+Blue Planet II (2017) | 5.0 | 1
+Bobik Visiting Barbos (1977) | 5.0 | 1
+Bossa Nova (2000) | 5.0 | 1
+Boy Eats Girl (2005) | 5.0 | 1
+Branded to Kill (Koroshi no rakuin) (1967) | 5.0 | 1
+Breed, The (2006) | 5.0 | 1
+Brother (Brat) (1997) | 5.0 | 1
+Buzzard (2015) | 5.0 | 1
+Calcium Kid, The (2004) | 5.0 | 1
+Che: Part One (2008) | 5.0 | 1
+Che: Part Two (2008) | 5.0 | 1
+Cheburashka (1971) | 5.0 | 1
+Cherish (2002) | 5.0 | 1
+Chinese Puzzle (Casse-tête chinois) (2013) | 5.0 | 1
+Chump at Oxford, A (1940) | 5.0 | 1
+Colourful (Karafuru) (2010) | 5.0 | 1
+Come and See (Idi i smotri) (1985) | 5.0 | 2
+Connections (1978) | 5.0 | 1
+Continental Divide (1981) | 5.0 | 1
+Cosmic Scrat-tastrophe (2015) | 5.0 | 1
+Craig Ferguson: I'm Here To Help (2013) | 5.0 | 1
+Crippled Avengers (Can que) (Return of the 5 Deadly Venoms) (1981) | 5.0 | 1
+Crossing Delancey (1988) | 5.0 | 1
+Cruel Romance, A (Zhestokij Romans) (1984) | 5.0 | 1
+De platte jungle (1978) | 5.0 | 1
+Death Note: Desu nôto (2006–2007) | 5.0 | 1
+Deathgasm (2015) | 5.0 | 1
+Decalogue, The (Dekalog) (1989) | 5.0 | 1
+Delirium (2014) | 5.0 | 1
+Denise Calls Up (1995) | 5.0 | 1
+Down Argentine Way (1940) | 5.0 | 1
+Dr. Goldfoot and the Bikini Machine (1965) | 5.0 | 1
+Dragons: Gift of the Night Fury (2011) | 5.0 | 1
+Dream of Light (a.k.a. Quince Tree Sun, The) (Sol del membrillo, El) (1992) | 5.0 | 1
+Duel in the Sun (1946) | 5.0 | 1
+Dylan Moran: Monster (2004) | 5.0 | 1
+Eichmann (2007) | 5.0 | 1
+Empties (2007) | 5.0 | 1
+English Vinglish (2012) | 5.0 | 1
+Enter the Void (2009) | 5.0 | 2
+Entertaining Angels: The Dorothy Day Story (1996) | 5.0 | 1
+Eva (2011) | 5.0 | 1
+Ex Drummer (2007) | 5.0 | 1
+Faster (2010) | 5.0 | 1
+Five Senses, The (1999) | 5.0 | 1
+Formula of Love (1984) | 5.0 | 1
+Four Days in September (O Que É Isso, Companheiro?) (1997) | 5.0 | 1
+Four Seasons, The (1981) | 5.0 | 1
+Front of the Class (2008) | 5.0 | 1
+Fugitives (1986) | 5.0 | 1
+Galaxy of Terror (Quest) (1981) | 5.0 | 1
+Garden of Words, The (Koto no ha no niwa) (2013) | 5.0 | 1
+Garfield's Pet Force (2009) | 5.0 | 1
+Gena the Crocodile (1969) | 5.0 | 1
+George Carlin: Back in Town (1996) | 5.0 | 1
+George Carlin: It's Bad for Ya! (2008) | 5.0 | 1
+George Carlin: Jammin' in New York (1992) | 5.0 | 1
+George Carlin: Life Is Worth Losing (2005) | 5.0 | 1
+George Carlin: You Are All Diseased (1999) | 5.0 | 1
+Get Low (2009) | 5.0 | 1
+Ghost Graduation (2012) | 5.0 | 1
+Girls About Town (1931) | 5.0 | 1
+Go for Zucker! (Alles auf Zucker!) (2004) | 5.0 | 1
+Going Places (Valseuses, Les) (1974) | 5.0 | 1
+Goodbye Charlie (1964) | 5.0 | 1
+Guy X (2005) | 5.0 | 1
+Happy Feet Two (2011) | 5.0 | 1
+Harlan County U.S.A. (1976) | 5.0 | 1
+Heidi Fleiss: Hollywood Madam (1995) | 5.0 | 2
+Hellbenders (2012) | 5.0 | 1
+Hollywood Chainsaw Hookers (1988) | 5.0 | 1
+Hollywood Shuffle (1987) | 5.0 | 1
+Holy Motors (2012) | 5.0 | 1
+Human (2015) | 5.0 | 1
+Human Condition III, The (Ningen no joken III) (1961) | 5.0 | 1
+Hunting Elephants (2013) | 5.0 | 1
+Hype! (1996) | 5.0 | 1
+I Am Not Your Negro (2017) | 5.0 | 1
+I'm the One That I Want (2000) | 5.0 | 1
+I, the Jury (1982) | 5.0 | 1
+Ice Age: The Great Egg-Scapade (2016) | 5.0 | 1
+Idiots and Angels (2008) | 5.0 | 1
+In the Realm of the Senses (Ai no corrida) (1976) | 5.0 | 1
+In the blue sea, in the white foam. (1984) | 5.0 | 1
+Indignation (2016) | 5.0 | 1
+Into the Abyss (2011) | 5.0 | 1
+Into the Forest of Fireflies' Light (2011) | 5.0 | 1
+Into the Woods (1991) | 5.0 | 1
+Investigation Held by Kolobki (1986) | 5.0 | 1
+Jane Eyre (1944) | 5.0 | 1
+Jonah Who Will Be 25 in the Year 2000 (Jonas qui aura 25 ans en l'an 2000) (1976) | 5.0 | 2
+Jump In! (2007) | 5.0 | 1
+Junior and Karlson (1968) | 5.0 | 1
+Justice League: Doom (2012) | 5.0 | 1
+Karlson Returns (1970) | 5.0 | 1
+King of Hearts (1966) | 5.0 | 1
+Knock Off (1998) | 5.0 | 1
+Kung Fu Panda: Secrets of the Masters (2011) | 5.0 | 1
+L.A. Slasher (2015) | 5.0 | 1
+Lady Jane (1986) | 5.0 | 1
+Laggies (2014) | 5.0 | 1
+Lamerica (1994) | 5.0 | 2
+Larry David: Curb Your Enthusiasm (1999) | 5.0 | 1
+Last Hurrah for Chivalry (Hao xia) (1979) | 5.0 | 1
+Last Year's Snow Was Falling (1983) | 5.0 | 1
+Lesson Faust (1994) | 5.0 | 2
+Light Years (Gandahar) (1988) | 5.0 | 1
+Little Dieter Needs to Fly (1997) | 5.0 | 1
+Little Murders (1971) | 5.0 | 1
+Live Nude Girls (1995) | 5.0 | 1
+Louis Theroux: Law & Disorder (2008) | 5.0 | 1
+Love Exposure (Ai No Mukidashi) (2008) | 5.0 | 1
+Love and Pigeons (1985) | 5.0 | 1
+Loving Vincent (2017) | 5.0 | 1
+Lumberjack Man (2015) | 5.0 | 1
+Madame Sousatzka (1988) | 5.0 | 1
+Man and a Woman, A (Un homme et une femme) (1966) | 5.0 | 1
+Man with the Golden Arm, The (1955) | 5.0 | 1
+Maniac Cop 2 (1990) | 5.0 | 1
+Marriage of Maria Braun, The (Ehe der Maria Braun, Die) (1979) | 5.0 | 1
+Martin Lawrence Live: Runteldat (2002) | 5.0 | 1
+Match Factory Girl, The (Tulitikkutehtaan tyttö) (1990) | 5.0 | 1
+Max Manus (2008) | 5.0 | 1
+Meantime (1984) | 5.0 | 1
+Mephisto (1981) | 5.0 | 1
+Mickey's Once Upon a Christmas (1999) | 5.0 | 1
+Miss Nobody (2010) | 5.0 | 1
+Monster Squad, The (1987) | 5.0 | 1
+Moonlight | 5.0 | 1
+More (1998) | 5.0 | 1
+Moscow Does Not Believe in Tears (Moskva slezam ne verit) (1979) | 5.0 | 1
+Mother (Madeo) (2009) | 5.0 | 1
+Mr. Skeffington (1944) | 5.0 | 1
+My Left Eye Sees Ghosts (Ngo joh aan gin diy gwai) (2002) | 5.0 | 1
+My Life as McDull (Mak dau goo si) (2001) | 5.0 | 1
+My Love (2006) | 5.0 | 1
+My Man Godfrey (1957) | 5.0 | 1
+My Sassy Girl (Yeopgijeogin geunyeo) (2001) | 5.0 | 1
+Mystery of the Third Planet, The (Tayna tretey planety) (1981) | 5.0 | 1
+Nasu: Summer in Andalusia (2003) | 5.0 | 1
+National Lampoon's Bag Boy (2007) | 5.0 | 1
+Nine Lives of Tomas Katz, The (2000) | 5.0 | 1
+Obsession (1965) | 5.0 | 1
+Odd Life of Timothy Green, The (2012) | 5.0 | 1
+On the Other Side of the Tracks (De l'autre côté du périph) (2012) | 5.0 | 1
+On the Ropes (1999) | 5.0 | 1
+On the Trail of the Bremen Town Musicians (1973) | 5.0 | 1
+One I Love, The (2014) | 5.0 | 1
+Only Lovers Left Alive (2013) | 5.0 | 1
+Ooops! Noah is Gone... (2015) | 5.0 | 1
+Open Hearts (Elsker dig for evigt) (2002) | 5.0 | 1
+Oscar (1967) | 5.0 | 1
+PK (2014) | 5.0 | 1
+Palindromes (2004) | 5.0 | 1
+Paper Birds (Pájaros de papel) (2010) | 5.0 | 1
+Particle Fever (2013) | 5.0 | 1
+Passenger, The (Professione: reporter) (1975) | 5.0 | 1
+Peaceful Warrior (2006) | 5.0 | 1
+Presto (2008) | 5.0 | 1
+Priklyucheniya Kapitana Vrungelya (1979) | 5.0 | 1
+Radio Day (2008) | 5.0 | 1
+Rain (2001) | 5.0 | 1
+Raise Your Voice (2004) | 5.0 | 1
+Red Sorghum (Hong gao liang) (1987) | 5.0 | 1
+Reform School Girls (1986) | 5.0 | 1
+Return to Treasure Island (1988) | 5.0 | 1
+Rivers and Tides (2001) | 5.0 | 1
+Runaway Brain (1995) | 5.0 | 1
+SORI: Voice from the Heart (2016) | 5.0 | 1
+Sandpiper, The (1965) | 5.0 | 1
+Satin Rouge (2002) | 5.0 | 1
+Saving Face (2004) | 5.0 | 1
+Saving Santa (2013) | 5.0 | 1
+Scooby-Doo Goes Hollywood (1979) | 5.0 | 1
+Scooby-Doo! Abracadabra-Doo (2010) | 5.0 | 1
+Scooby-Doo! Curse of the Lake Monster (2010) | 5.0 | 1
+Scooby-Doo! and the Loch Ness Monster (2004) | 5.0 | 1
+Scooby-Doo! and the Samurai Sword (2009) | 5.0 | 1
+Seems Like Old Times (1980) | 5.0 | 1
+Seve (2014) | 5.0 | 1
+Sherlock Holmes and Dr. Watson: Acquaintance (1979) | 5.0 | 1
+Shogun Assassin (1980) | 5.0 | 1
+Siam Sunset (1999) | 5.0 | 1
+Sisters (Syostry) (2001) | 5.0 | 1
+Slumber Party Massacre II (1987) | 5.0 | 1
+Slumber Party Massacre III (1990) | 5.0 | 1
+Snowflake, the White Gorilla (2011) | 5.0 | 1
+Son of the Bride (Hijo de la novia, El) (2001) | 5.0 | 1
+Sonatine (Sonachine) (1993) | 5.0 | 1
+Sorority House Massacre (1986) | 5.0 | 1
+Sorority House Massacre II (1990) | 5.0 | 1
+Spellbound (2011) | 5.0 | 1
+Stand, The (1994) | 5.0 | 1
+Story of Women (Affaire de femmes, Une) (1988) | 5.0 | 1
+Strictly Sexual (2008) | 5.0 | 1
+Stuart Little 3: Call of the Wild (2005) | 5.0 | 1
+Summer's Tale, A (Conte d'été) (1996) | 5.0 | 1
+Sun Alley (Sonnenallee) (1999) | 5.0 | 1
+Supercop 2 (Project S) (Chao ji ji hua) (1993) | 5.0 | 1
+Superman/Batman: Public Enemies (2009) | 5.0 | 1
+Tales of Manhattan (1942) | 5.0 | 1
+Tenchi Muyô! In Love (1996) | 5.0 | 1
+The Adventures of Sherlock Holmes and Doctor Watson | 5.0 | 1
+The Adventures of Sherlock Holmes and Doctor Watson: King of Blackmailers (1980) | 5.0 | 1
+The Adventures of Sherlock Holmes and Doctor Watson: The Treasures of Agra (1983) | 5.0 | 1
+The Adventures of Sherlock Holmes and Dr. Watson: Bloody Signature (1979) | 5.0 | 1
+The Big Bus (1976) | 5.0 | 1
+The Bremen Town Musicians (1969) | 5.0 | 1
+The Editor (2015) | 5.0 | 1
+The Eye: Infinity (2005) | 5.0 | 1
+The Fox and the Hound 2 (2006) | 5.0 | 1
+The Girl with All the Gifts (2016) | 5.0 | 1
+The Girls (1961) | 5.0 | 1
+The Jinx: The Life and Deaths of Robert Durst (2015) | 5.0 | 1
+The Love Bug (1997) | 5.0 | 1
+There Once Was a Dog (1982) | 5.0 | 1
+Thin Line Between Love and Hate, A (1996) | 5.0 | 1
+Thousand Clowns, A (1965) | 5.0 | 1
+Three from Prostokvashino (1978) | 5.0 | 1
+Tickling Giants (2017) | 5.0 | 1
+Tokyo Tribe (2014) | 5.0 | 1
+Tom Segura: Completely Normal (2014) | 5.0 | 1
+Tom Segura: Mostly Stories (2016) | 5.0 | 1
+Tom and Jerry: A Nutcracker Tale (2007) | 5.0 | 1
+Tom and Jerry: Shiver Me Whiskers (2006) | 5.0 | 1
+Trailer Park Boys (1999) | 5.0 | 1
+Travels of an Ant (1983) | 5.0 | 1
+Trinity and Sartana Are Coming (1972) | 5.0 | 1
+True Stories (1986) | 5.0 | 1
+Two Family House (2000) | 5.0 | 1
+Tyler Perry's I Can Do Bad All by Myself (2009) | 5.0 | 1
+Ugly Duckling and Me!, The (2006) | 5.0 | 1
+Umberto D. (1952) | 5.0 | 1
+Unfaithfully Yours (1948) | 5.0 | 1
+Unicorn City (2012) | 5.0 | 1
+Vacations in Prostokvashino (1980) | 5.0 | 1
+Vagabond (Sans toit ni loi) (1985) | 5.0 | 1
+Valet, The (La doublure) (2006) | 5.0 | 1
+Vampire in Venice (Nosferatu a Venezia) (Nosferatu in Venice) (1986) | 5.0 | 1
+Very Potter Sequel, A (2010) | 5.0 | 1
+Villain (1971) | 5.0 | 1
+Vovka in the Kingdom of Far Far Away (1965) | 5.0 | 1
+Watching the Detectives (2007) | 5.0 | 1
+Watermark (2014) | 5.0 | 1
+What Happened Was... (1994) | 5.0 | 1
+What Love Is (2007) | 5.0 | 1
+What Men Talk About (2010) | 5.0 | 1
+When Worlds Collide (1951) | 5.0 | 1
+Who Killed Chea Vichea? (2010) | 5.0 | 1
+Willy/Milly (1986) | 5.0 | 1
+Wings, Legs and Tails (1986) | 5.0 | 1
+Winnie Pooh (1969) | 5.0 | 1
+Winnie the Pooh Goes Visiting (1971) | 5.0 | 1
+Winnie the Pooh and the Day of Concern (1972) | 5.0 | 1
+Winter in Prostokvashino (1984) | 5.0 | 1
+Woman Is a Woman, A (femme est une femme, Une) (1961) | 5.0 | 1
+Woman Under the Influence, A (1974) | 5.0 | 1
+Won't You Be My Neighbor? (2018) | 5.0 | 1
+Wonder Woman (2009) | 5.0 | 1
+World of Glory (1991) | 5.0 | 1
+Wow! A Talking Fish! (1983) | 5.0 | 1
+Zeitgeist: Moving Forward (2011) | 5.0 | 1
+
+Rows returned: 296
+
+============================================================
+REQUIRED ASSIGNMENT QUERY 2
+============================================================
+genre | average_rating | rating_count
+Film-Noir | 3.92 | 870
+War | 3.81 | 4859
+Documentary | 3.8 | 1219
+Drama | 3.66 | 41928
+Crime | 3.66 | 16681
+
+Rows returned: 5
+
+============================================================
+REQUIRED ASSIGNMENT QUERY 3
+============================================================
+director | movie_count
+Woody Allen | 48
+
+Rows returned: 1
+
+============================================================
+REQUIRED ASSIGNMENT QUERY 4
+============================================================
+release_year | average_rating | rating_count
+1902 | 3.5 | 5
+1903 | 2.5 | 2
+1908 | 4.0 | 1
+1915 | 2.0 | 1
+1916 | 3.6 | 5
+1917 | 4.5 | 1
+1919 | 2.0 | 1
+1920 | 3.81 | 8
+1921 | 4.1 | 5
+1922 | 3.53 | 16
+1923 | 3.64 | 7
+1924 | 3.58 | 6
+1925 | 3.79 | 19
+1926 | 4.0 | 13
+1927 | 3.69 | 29
+1928 | 3.65 | 13
+1929 | 3.83 | 9
+1930 | 4.21 | 17
+1931 | 3.61 | 76
+1932 | 3.33 | 24
+1933 | 3.73 | 65
+1934 | 4.09 | 34
+1935 | 3.97 | 46
+1936 | 3.53 | 53
+1937 | 3.66 | 115
+1938 | 3.77 | 56
+1939 | 3.76 | 201
+1940 | 3.82 | 223
+1941 | 3.9 | 197
+1942 | 3.92 | 185
+1943 | 3.63 | 20
+1944 | 4.04 | 92
+1945 | 3.54 | 42
+1946 | 3.95 | 138
+1947 | 3.85 | 52
+1948 | 3.85 | 80
+1949 | 3.76 | 72
+1950 | 3.81 | 161
+1951 | 3.8 | 182
+1952 | 3.95 | 96
+1953 | 3.65 | 153
+1954 | 4.01 | 272
+1955 | 3.72 | 182
+1956 | 3.68 | 115
+1957 | 4.04 | 215
+1958 | 3.84 | 165
+1959 | 3.79 | 243
+1960 | 3.72 | 251
+1961 | 3.7 | 225
+1962 | 3.97 | 262
+1963 | 3.63 | 287
+1964 | 3.94 | 376
+1965 | 3.74 | 234
+1966 | 3.82 | 190
+1967 | 3.92 | 381
+1968 | 3.81 | 434
+1969 | 3.69 | 218
+1970 | 3.75 | 244
+1971 | 3.84 | 533
+1972 | 3.94 | 366
+1973 | 3.76 | 483
+1974 | 3.94 | 466
+1975 | 3.88 | 637
+1976 | 3.76 | 423
+1977 | 3.81 | 567
+1978 | 3.46 | 490
+1979 | 3.68 | 786
+1980 | 3.73 | 944
+1981 | 3.76 | 792
+1982 | 3.51 | 1053
+1983 | 3.63 | 878
+1984 | 3.53 | 1441
+1985 | 3.43 | 1237
+1986 | 3.46 | 1581
+1987 | 3.49 | 1540
+1988 | 3.42 | 1551
+1989 | 3.46 | 1895
+1990 | 3.43 | 1926
+1991 | 3.55 | 1722
+1992 | 3.35 | 2013
+1993 | 3.45 | 3741
+1994 | 3.5 | 5296
+1995 | 3.44 | 6144
+1996 | 3.34 | 4509
+1997 | 3.35 | 3643
+1998 | 3.43 | 3557
+1999 | 3.5 | 4536
+2000 | 3.4 | 4268
+2001 | 3.48 | 3914
+2002 | 3.41 | 3642
+2003 | 3.46 | 3145
+2004 | 3.51 | 3390
+2005 | 3.36 | 2498
+2006 | 3.5 | 2584
+2007 | 3.52 | 2318
+2008 | 3.53 | 2151
+2009 | 3.57 | 1856
+2010 | 3.57 | 1715
+2011 | 3.46 | 1440
+2012 | 3.51 | 1386
+2013 | 3.46 | 1201
+2014 | 3.51 | 1320
+2015 | 3.41 | 1088
+2016 | 3.39 | 785
+2017 | 3.58 | 461
+2018 | 3.48 | 91
+
+Rows returned: 106
+
+Finished running required assignment queries.

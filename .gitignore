@@ -1,0 +1,46 @@
+# Environment & Secrets (Never commit credentials)
+.env
+.env.*
+*.env
+
+# Python Virtual Environments
+.venv/
+venv/
+env/
+
+# Python Bytecode & Test Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# SQLite Database Files & Backups
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+*.bak
+*.backup
+
+# Runtime Logs & Concurrency Lock Files
+logs/
+*.log
+*.lock
+
+# Temporary, Backup & Editor Files
+*.tmp
+*.swp
+*.before_test
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data Directories: ignore general data folders by default,
+# with narrow exceptions for the required MovieLens Small dataset
+data/*
+!data/raw/
+data/raw/*
+!data/raw/ml-latest-small/
